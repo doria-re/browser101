@@ -8,10 +8,10 @@ const $yPx = document.querySelector("#y-px");
 console.dir($xPx)
 
 function onMouseMove(event){
-  let mouseX = event.clientX;
-  let mouseY = event.clientY;
-  $target.style.left = `${mouseX-60}px`;
-  $target.style.top = `${mouseY-60}px`;
+  const mouseX = event.clientX;
+  const mouseY = event.clientY;
+  $target.style.left = `${mouseX}px`;
+  $target.style.top = `${mouseY}px`;
   $xLine.style.top = `${mouseY-9}px`;
   $yLine.style.left = `${mouseX-1}px`;
   $pxs.style.left = `${mouseX+20}px`
@@ -19,3 +19,9 @@ function onMouseMove(event){
   $xPx.innerText = `${mouseX}px`
   $yPx.innerText = `${mouseY}px`
 }
+
+/* document.addEventListener("mousemove", event => {
+
+})
+이렇게 구현하면 div로 전체 감쌀 필요 없이 구현 가능 
+*/
