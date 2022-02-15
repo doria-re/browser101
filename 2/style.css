@@ -1,0 +1,16 @@
+.square {
+  display: table;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #000;
+  border-collapse: collapse;
+  background-color: antiquewhite;
+}
+.mother-square {
+  display: table;
+  border: 2px solid #000;
+  border-collapse: collapse;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
