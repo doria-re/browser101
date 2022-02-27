@@ -4,10 +4,9 @@ const $yLine = document.querySelector("#y-line");
 const $pxs = document.querySelector("#pxs");
 
 document.addEventListener("mousemove", event =>{
-  console.log(event)
   const mouseX = event.clientX;
   const mouseY = event.clientY;
-  $target.style.transform = `translate(${mouseX-60}px, ${mouseY-60}px)`;
+  $target.style.transform = `translateX(${mouseX}px) translateY(${mouseY}px) translate(-50%,-50%)`;
   $xLine.style.transform = `translateY(${mouseY-9}px)`;
   $yLine.style.transform = `translateX(${mouseX-1}px)`;
   $pxs.style.transform = `translate(${mouseX+30}px, ${mouseY+30}px`
