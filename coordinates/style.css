@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   background-color: black;
   margin: 0px;
@@ -33,3 +34,40 @@ body {
   color: white;
   position: absolute;
 }
+=======
+body {
+  background-color: black;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.cover-body {
+  width: 100vw;
+  height: 100vh;
+  /*cursor: none;*/
+}
+
+#x-line {
+  width: 100%;
+  size: 1px;
+  color: white;
+  position: absolute;
+}
+
+#y-line {
+  border: 1px solid white;
+  width: 0px;
+  height: 100%;
+  position: absolute;
+}
+
+#target {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+#pxs {
+  color: white;
+  position: absolute;
+}
+>>>>>>> f41421824d1dd6747483c119f66108098be197d2
